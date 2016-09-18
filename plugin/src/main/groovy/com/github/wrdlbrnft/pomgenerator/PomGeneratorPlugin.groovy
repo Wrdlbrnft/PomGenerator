@@ -116,7 +116,7 @@ class PomGeneratorPlugin implements Plugin<Project> {
             extension.configurations = [compileConfiguration]
         }
         if (extension.outputLocation == null) {
-            extension.outputLocation = project.file('pom.xml')
+            extension.outputLocation = project.file(extension.artifactId + '-' + extension.versionName + '.pom')
         }
     }
 

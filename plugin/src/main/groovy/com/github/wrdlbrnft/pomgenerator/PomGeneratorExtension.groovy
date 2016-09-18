@@ -21,7 +21,7 @@ class PomGeneratorExtension {
         this.artifactId = artifactId
     }
 
-    void version(String version) {
+    void versionName(String version) {
         this.versionName = version
     }
 
